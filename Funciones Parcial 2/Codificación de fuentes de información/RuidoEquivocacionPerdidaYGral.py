@@ -162,18 +162,18 @@ print(f"Entropía de salida H(B): {H_B:.4f} bits")
 print()
 
 H_ruido = genEquivocacionRuido(prob_priori_C1, matriz_C1)
-print(f"Equivocación H(A|B) = {H_ruido:.4f} bits")
+print(f"Equivocación H(A/B) = {H_ruido:.4f} bits")
 print()
 
 H_perdida = genPerdida(prob_priori_C1, matriz_C1)
-print(f"Pérdida H(B|A) = {H_perdida:.4f} bits")
+print(f"Pérdida H(B/A) = {H_perdida:.4f} bits")
 print()
 
 H_AyB = genEntropiaAfin(prob_priori_C1, matriz_C1)
-print(f"H(A,B) = {H_AyB:.4f} bits")
+print(f"Entropia afín H(A,B) = {H_AyB:.4f} bits")
 print()
 
 I_AyB = genInfoMutua(prob_priori_C1, matriz_C1)
-print(f"I(A,B) = I(B,A) = {I_AyB:.4f} bits")
+print(f"Información mutua I(A,B) = I(B,A) = {I_AyB:.4f} bits")
 
 print()

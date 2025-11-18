@@ -1,0 +1,49 @@
+Un canal de información viene determinado por un alfabeto de entrada A = {ai}, i = 1, 2, ..., r ; un alfabeto de salida B = {bj}, j = 1, 2, ..., s ; y un conjunto de probabilidades condicionales P (bj/ai). P (bj/ai) es la probabilidad de recibir a la salida el símbolo bj cuando se envía el símbolo de entrada ai.
+
+
+P(a) = Probabilidad a priori del símbolo de entrada. Es la probabilidad de que entre en el canal el símbolo ai.
+
+
+P(bj) = Probabilidad del símbolo de salida, ponderando la probabilidad del símbolo de entrada P(a) con la probabilidad condicional. Es la probabilidad de observar bj sin conocer el símbolo que entró
+
+
+P(ai, bj) = Es la probabilidad de que ocurra el "evento completo": que el transmisor elija enviar ai Y ADEMÁS el receptor reciba bj. Se le llama suceso simultáneo.
+
+
+P(ai / bj) = Es la probabilidad de que, habiendo recibido bj, este haya venido originalmente de ai. Recibe el nombre de probabilidad "a posteriori".
+
+
+La Entropía de una fuente es la cantidad media de información necesaria para poder identificar un símbolo emitido por la fuente. Es una medida de la incertidumbre sobre el símbolo que emitirá la fuente.
+
+
+Entropía a priori H(A) = es el número medio de binits necesarios para representar un símbolo de una fuente con una probabilidad a priori P (ai) i = 1, 2, . . ., r.
+
+
+Entropías a posteriori H(A / bj) = Representa el número medio de binits necesarios para representar un símbolo de una fuente con una probabilidad a posteriori P(ai/bj), i = 1, 2, ..., r.
+
+
+Equivocación o Ruido (Entropía media a posteriori) H(A / B) = recibe el nombre de Equivocación de A con respecto a B a través del canal:
+– Mide la información que queda en A después de observar B.
+– Pérdida de información sobre A causada por el canal.
+– Cantidad de información sobre A que no deja pasar el canal.
+Nro. mínimo de preguntas binarias en promedio para determinar la entrada conocida la salida.
+
+Ejemplos, no son propiedades.
+H (A/b=*) > H (A) Hay más incertidumbre al observar la salida.
+H (A/B) < H (A) En promedio nunca se pierde información al conocer la salida.
+
+
+Información mutua I(A,B) = I(B,A) = Es la cantidad de información sobre A, menos la cantidad de información que todavía hay en A después de observar la salida:
+– Es la cantidad de información que se obtiene de A gracias al conocimiento de B.
+– Es la incertidumbre sobre la entrada del canal que se resuelve observando la salida del canal.
+– Es la cantidad de información sobre A que atraviesa el canal.
+
+I(A,B) es una medida de la incertidumbre sobre la salida del canal que se resuelve enviando la entrada.  Es un indicador de la información ganada debido al acople entre las variables A (entrada) y B (salida).
+
+La información mutua permite obtener un índice que indica lo bien o mal que se está usando un canal. Recíprocamente, permite elegir el canal adecuado para la transmisión de símbolos generados por una fuente fija.
+
+
+Entropía afín H(A,B) = mide la incertidumbre del suceso simultáneo (ai, bj).
+
+
+Pérdida H(B/A)= Nro. mínimo de preguntas binarias en promedio para determinar la salida conocida la entrada.

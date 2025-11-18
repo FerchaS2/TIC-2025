@@ -1,0 +1,55 @@
+Canales sin ruido: Se denomina “canal sin ruido” a un canal definido por una matriz con un elemento, y solamente uno, distinto de cero en cada columna.
+
+Al observar una salida bj se conoce con certeza el símbolo ai transmitido, es decir las probabilidades condicionales P (ai/bj) son 0 y 1. En un canal sin ruido H (A/B) = 0.
+
+Las salidas de un canal sin ruido son suficientes por sí mismas para determinar las entradas del canal. Por lo tanto, el número medio del binits necesarios para definir la entrada, una vez conocida la salida, es nulo. Por lo tanto I(A,B)=H(A).
+Es decir, la cantidad de información transmitida por este canal es igual a la incertidumbre total del alfabeto de entrada.
+
+
+Canales determinantes: Se denomina “canal determinante” a un canal definido por una matriz con un elemento, y solamente uno, distinto de cero en cada fila.
+H(B/A) = 0 e I(A,B)=H(B).
+
+
+Canales en serie: La matriz del canal compuesto a partir de los canales en serie se obtiene multiplicando las matrices de los canales individuales.
+Los canales tienden a “perder” información. La información que emerge finalmente de varios canales en serie no puede ser mayor que la que emergía de un punto intermedio de la serie, si se pudiera extraer de él.
+
+
+Canales reducidos:
+En la mayor parte de los canales encontrados en la vida real el conjunto de salidas es mayor de lo que sería de desear. 
+Sea un canal de r entradas y s salidas, definido por la matriz P.
+Se define un nuevo canal de r entradas y s-1 salidas asociando y sumando dos de las columnas de P. La matriz del nuevo canal es P'.
+
+
+Extensión de un canal:
+De la misma forma en que se procedió en el caso de las fuentes de información, pueden considerarse bloques de n símbolos de entrada y salida, en lugar de símbolos aislados. Así, se puede definir la extensión de orden n de un canal.
+
+La reducción de un canal disminuye (o a lo sumo mantiene constante) la Información mutua entre los alfabetos de entrada y salida. Es el precio que hay que pagar por su simplificación.
+
+Si la matriz de un canal satisface la relación P(b1/a)=const×P(b2/ a) para cualquier a, dos cualquiera de sus columnas pueden combinarse, obteniendo una matriz tan buena como la anterior.
+Más concretamente, cualquiera que sean las probabilidades del alfabeto de entrada, las informaciones mutuas de un canal y el reducido serían idénticas.
+Un canal reducido con esta propiedad se denomina REDUCCIÓN SUFICIENTE.
+
+
+Capacidad del canal:
+La capacidad del canal está definida como el máximo valor al cual la información puede ser transmitida por un canal.
+La capacidad de un canal representa:
+- el máximo acople posible entre la entrada y la salida.
+- la máxima cantidad de información que puede transmitir el canal.
+En general, el cálculo de la capacidad se reduce a encontrar la distribución de entrada óptima que maximiza la información mutua.
+
+
+Canal simétrico: En un canal simétrico los elementos de las filas y las columnas son iguales pero permutados.
+
+
+Canal uniforme: Un canal es uniforme si cada fila consiste en una permutación arbitraria de los términos de la primera fila. 
+
+
+Regla de decisión, d(bj): Función que especifica el símbolo de entrada único que corresponde a cada símbolo de salida.
+Un canal de r entradas y s salidas admite r s reglas de decisión diferentes.
+Se elegirá la regla de decisión que haga mínima la probabilidad de error.
+
+
+Probabilidad de error P(E/bj): Probabilidad condicional de error cuando la salida del canal es bj.
+
+La probabilidad de error de un canal será mínima con la regla de decisión que asigna a cada símbolo de salida el símbolo de entrada de mayor probabilidad.
+Esta regla de decisión recibe el nombre de regla de máxima posibilidad condicional.

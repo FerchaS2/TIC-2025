@@ -1,0 +1,54 @@
+ -> Entropía
+
+La Entropía de una fuente es la cantidad media de información necesaria para poder identificar un símbolo emitido por la fuente. Es una medida de la incertidumbre sobre el símbolo que emitirá la fuente.
+
+Medida de la incertidumbre.
+Una entropía alta significa mayor incertidumbre, mientras que una entropía baja implica menor incertidumbre.
+La entropía es la cantidad mínima promedio de preguntas binarias (de respuesta SÍ o NO) necesarias para determinar el valor de una variable aleatoria o identificar un mensaje desconocido.
+
+
+ -> Longitud media
+
+Longitud promedio ponderada de los códigos de un mensaje
+
+
+ -> Rendimiento y redundancia
+
+η = Rendimiento
+1 - η = Redundancia
+
+Mayor redundancia implica menor información, el η es máximo si L = Hr(S) y (1 – η) será minimo si L = Hr(S)
+Si encontramos una redundancia muy baja, podemos dar fé de que es un código muy eficiente.
+
+
+ -> Huffman
+
+Agrupa los símbolos menos probables para formar un nuevo símbolo.
+Obtiene un código instantáneo óptimo.
+
+
+ -> Shannon-Fanno
+
+Es un procedimiento SUBÓPTIMO para construir un código, que alcanza una cota de L ≤ H(S) + 2.
+
+
+ -> RLC
+
+Este código agrupa los símbolos consecutivos colocando la cantidad de repeticiones seguida del símbolos.
+
+
+ -> Tasa de compresión
+
+Tasa = tam_orig / tam_comprimido
+A menor tasa, "peor" es la compresión (menor ahorro de espacio).
+
+
+ -> Distancia de Hamming
+
+Se define como Distancia de Hamming entre dos palabras al número de bits que difieren una de otra.
+
+Distancia de Hamming = 4, es decir hacen falta 4 cambios para transformar una palabra en la otra.
+
+Para detectar errores de un bit entre dos palabras, es necesario un código con una distancia de Hamming de al menos 2. Visto de otra forma: Dado un codigo C con una distancia de Hamming de d se pueden detectar d-1 errores (si d=2 d-1=1).
+
+Con una distancia de Hamming de d=n se pueden corregir (d-1)/2 errores.
